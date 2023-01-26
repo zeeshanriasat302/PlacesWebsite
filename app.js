@@ -40,7 +40,7 @@ const morgan = require('morgan')
 
 const PORT = process.env.PORT || 4000;
 
- const DB = 'mongodb+srv://menu:menu123456@cluster0.mjb4ydr.mongodb.net/testplace?retryWrites=true&w=majority'
+//  const DB = 'mongodb+srv://menu:menu123456@cluster0.mjb4ydr.mongodb.net/testplace?retryWrites=true&w=majority'
  const app = express()
  app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(specs))
 
