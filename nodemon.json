@@ -1,0 +1,9 @@
+{
+    "env": {
+        "DB_USER": "postgres",
+        "DB_PASSWORD": "password",
+        "DB_NAME": "placetest",
+        "JWT_KEY": "supersecret_dont_share"
+
+    }
+}

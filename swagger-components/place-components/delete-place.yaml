@@ -1,0 +1,63 @@
+
+/**
+ * @swagger
+ * components:
+ *   schemas:
+ *     Place:
+ *       type: object
+ *       required:
+ *         - title
+ *         - description
+ *         - address
+ *         - image
+ *       properties:
+ *         id:
+ *           type: string
+ *           description: The auto-generated id of the place
+ *         title:
+ *           type: string
+ *           description: The place title
+ *         description:
+ *           type: string
+ *           description: The place description
+ *         address: 
+ *           type: string
+ *           description: The Address of User
+ *         image: 
+ *            type: string
+ *            description: The image of the Place
+ *       example:
+ *         id: d5fE_asz
+ *         title: Lahore
+ *         description: A beautiful city in pakistan
+ *         address: Lahore Punjab Pakistan
+ *         image: httpimageurl
+ */
+
+ /**
+  * @swagger
+  * tags:
+  *   name: Places
+  *   description: The Place managing API
+  */
+  
+/**
+ * @swagger
+ * /api/places/{id}:
+ *   delete:
+ *     summary: Remove the place by id
+ *     tags: [Places]
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         schema:
+ *           type: string
+ *         required: true
+ *         description: The place id
+ * 
+ *     responses:
+ *       200:
+ *         description: The place was deleted
+ *       404:
+ *         description: The place was not found
+ */
